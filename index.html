@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=W, initial-scale=1.0">
     <title>Welcome</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bellefair&family=Belleza&family=Numans&family=Nunito&family=Raleway&family=Roboto&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -14,178 +20,160 @@
 <body>
 
     <div class="p-1">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg m-5 bg-transparent">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+        <div class="container-fluid">
+            <nav class="navbar mt-2 navbar-expand-lg bg-transparent ">
+                <div class="row mb-2 flex-row ms-5 me-5 w-100">
+                    <div class="col-md-5 flex-column justify-content-center align-self-center">
+                        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
 
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item active">
-                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">PRODUCT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT US</a>
-                            </li>
-
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a class="navbar-brand me-5" href="#">
-                        <img src="/2/img/logo.svg" class="img-fluid" alt="">
-                    </a>
-                    <div class="collapse navbar-collapse ms-5 me-5" id="navbarTogglerDemo03">
-                        <form class="d-flex form-control bg-transparent border-0" role="search">
-                            <div class="d-flex bg-white search-form">
-                                <img src="/2/img/search_small.svg" class="d-flex img-fluid ms-2 mt-2" alt="">
-                                <input class="border-0 " type="search" aria-label="Search">
-                                <img src="/2/img/|.svg" class="d-flex" alt="">
-                                <img src="/2/img/shopping-bag.svg" class="d-flex ms-2 img-fluid" alt="">
-                                <img src="/2/img/cart_badge.svg" class="d-flex mb-3 img-fluid" alt="">
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="user_profile ms-5 me-5 d-flex">
-                        Meetraj
-                        <li class="nav-item dropdown d-flex">
-                            <img src="/2/img/profile_icon.svg" class="nav-link dropdown-toggle ms-3 img-fluid" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-                                alt="">
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item bg-transparent " href="#">Profile</a></li>
-                                <li><a class="dropdown-item bg-transparent" href="#">Settings</a></li>
-                                <li>
-                                    <hr class="dropdown-divider ">
+                        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                            <ul class="navbar-nav me-auto mb-lg-0 position-absolute bg-light rounded-3">
+                                <li class="nav-item active">
+                                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
                                 </li>
-                                <li><a class="dropdown-item bg-transparent" href="#">Log out</a></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">PRODUCT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">CONTACT US</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">ABOUT US</a>
+                                </li>
                             </ul>
-                        </li>
+                        </div>
+                    </div>
+                    <div class="col-md-2 flex-column justify-content-center text-center align-self-center">
+                        <a class="navbar-brand" href="#">
+                            <img src="/2/img/logo.svg" class="img-fluid" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-5 flex-column justify-content-center align-self-center">
 
+                        <div class="row mb-2 d-flex flex-row justify-content-center">
+                            <div class="col-md-6 flex-column justify-content-center align-self-center">
+
+                                <form role="search" class="d-flex form-control bg-white border-0 rounded-5 nav-item">
+                                    <img src="/2/img/search_small.svg" class="img-fluid ms-2 mt-2" alt="">
+                                    <input class="form-control border-0" type="search" aria-label="Search">
+                                    <img src="/2/img/|.svg" class="d-flex" alt="">
+                                    <img src="/2/img/shopping-bag.svg" class="d-flex ms-2 img-fluid" alt="">
+                                    <img src="/2/img/cart_badge.svg" class="d-flex mb-3 img-fluid" alt="">
+                                </form>
+                                <!-- <div class="collapse d-flex navbar-collapse" id="navbarTogglerDemo03">
+                                    <form class="d-flex form-control bg-white border-0 rounded-5"
+                                        role="search">
+                                        <img src="/2/img/search_small.svg" class="d-flex img-fluid ms-2 mt-2" alt="">
+                                        <input class="border-0 " type="search" aria-label="Search">
+                                        <img src="/2/img/|.svg" class="d-flex" alt="">
+                                        <img src="/2/img/shopping-bag.svg" class="d-flex ms-2 img-fluid" alt="">
+                                        <img src="/2/img/cart_badge.svg" class="d-flex mb-3 img-fluid" alt="">
+                                    </form>
+                                </div> -->
+                            </div>
+                            <div class="col-md-6 flex-column justify-content-center align-self-center text-center ">
+                                <div class="user_profile d-flex ms-5 d-none d-sm-none d-md-block">
+                                    
+                                    <li class="nav-item dropdown d-flex ">
+                                        <span class="ms-5 me-3 ">Meetraj</span>
+                                        <img src="/2/img/profile_icon.svg"
+                                            class="nav-link dropdown-toggle ms-3 img-fluid" href="#" id="navbarDropdown"
+                                            role="button" data-bs-toggle="dropdown" aria-expanded="false" alt="">
+                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item bg-transparent " href="#">Profile</a></li>
+                                            <li><a class="dropdown-item bg-transparent" href="#">Settings</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider ">
+                                            </li>
+                                            <li><a class="dropdown-item bg-transparent" href="#">Log out</a></li>
+                                        </ul>
+                                    </li>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </nav>
 
-            <div class="row mb-2 m-5">
-                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-
-                            <div class="row mb-2 m-5">
-                                <div class="col-md-6 mt-5">
-                                    <div class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <h1 class="mb-0 hero-h1">Get 50% Offer Now!!</h1>
-                                            <p class="hero-p">One year pieces to pieces guarantee, if you are not
-                                                satisfy
-                                                100%
-                                                money back
-                                                guarantee.</p>
-                                            <button class="btnBN">
-                                                BUY NOW!
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 ">
-                                    <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <div class="hero-image">
-                                                <img src="/2/img/PngItem_1.svg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div id="carouselExampleControls" class="carousel slide m-5 position-relative" data-bs-ride="carousel">
+                <div class="carousel-inner mt-5">
+                    <div class="carousel-item active mt-5">
+                        <div class="row mb-2 d-flex flex-row justify-content-center">
+                            <div class="col-md-5 flex-column">
+                                <h1 class="mb-0 hero-h1">Get 50% </br> Offer Now!!</h1>
+                                <p class="hero-p">One year pieces to pieces guarantee, if you are
+                                    </br>not satisfy 100% money back guarantee.</p>
+                                <button class="btnBN">
+                                    BUY NOW!
+                                </button>
                             </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row mb-2 m-5">
-                                <div class="col-md-6 mt-5">
-                                    <div class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <h1 class="mb-0 hero-h1">Get 50% Offer Now!!</h1>
-                                            <p class="hero-p">One year pieces to pieces guarantee, if you are not
-                                                satisfy
-                                                100%
-                                                money back
-                                                guarantee.</p>
-                                            <button class="btnBN">
-                                                BUY NOW!
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 ">
-                                    <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <div class="hero-image">
-                                                <img src="/2/img/PngItem_1.svg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="row mb-2 m-5">
-                                <div class="col-md-6 mt-5">
-                                    <div class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <h1 class="mb-0 hero-h1">Get 50% Offer Now!!</h1>
-                                            <p class="hero-p">One year pieces to pieces guarantee, if you are not
-                                                satisfy
-                                                100%
-                                                money back
-                                                guarantee.</p>
-                                            <button class="btnBN">
-                                                BUY NOW!
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6 ">
-                                    <div class="row g-0 overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                        <div class="col p-4 d-flex flex-column position-static">
-                                            <div class="hero-image">
-                                                <img src="/2/img/PngItem_1.svg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                            <div class="col-md-6 d-flex flex-column order-md-1 hero-img justify-content-center ">
+                                <img src="/2/img/PngItem_1.svg" class="img-fluid hero-img" alt="">
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                        <div class="hero-image carousel-control-prev">
-                            <img src="/2/img/<.svg" alt="">
+                    <div class="carousel-item mt-5">
+                        <div class="row mb-2 d-flex flex-row justify-content-center">
+                            <div class="col-md-5 flex-column">
+                                <h1 class="mb-0 hero-h1">Get 50% </br> Offer Now!!</h1>
+                                <p class="hero-p">One year pieces to pieces guarantee, if you are
+                                    </br>not satisfy 100% money back guarantee.</p>
+                                <button class="btnBN">
+                                    BUY NOW!
+                                </button>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column order-md-1 hero-img justify-content-center ">
+                                <img src="/2/img/PngItem_1.svg" class="img-fluid hero-img" alt="">
+                            </div>
                         </div>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                        <div class="hero-image carousel-control-next">
-                            <img src="/2/img/>.jpg" alt="">
+                    </div>
+                    <div class="carousel-item mt-5">
+                        <div class="row mb-2 d-flex flex-row justify-content-center">
+                            <div class="col-md-5 flex-column">
+                                <h1 class="mb-0 hero-h1">Get 50% </br> Offer Now!!</h1>
+                                <p class="hero-p">One year pieces to pieces guarantee, if you are
+                                    </br>not satisfy 100% money back guarantee.</p>
+                                <button class="btnBN">
+                                    BUY NOW!
+                                </button>
+                            </div>
+                            <div class="col-md-6 d-flex flex-column order-md-1 hero-img justify-content-center ">
+                                <img src="/2/img/PngItem_1.svg" class="img-fluid hero-img" alt="">
+                            </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev"
+                    style="margin-left: -45px !important;">
+                    <div class="hero-image carousel-control-prev">
+                        <img src="/2/img/<.svg" alt="">
+                    </div>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next"
+                    style="margin-right: -45px !important;">
+                    <div class="hero-image carousel-control-next">
+                        <img src="/2/img/>.jpg" alt="">
+                    </div>
+                </a>
             </div>
+
+
         </div>
 
     </div>
     <div class="p-2">
-        <div class="container">
+        <div class="container-fluid">
 
-            <div class="row mb-2 m-5">
+            <div class="row mb-2 mt-5">
 
-                <div class="col-md-4 mt-5">
-                    <div class="card border-0 rounded-5 sales-box" style="width: 18rem;">
+                <div class="col-md-4 m-0 mt-5">
+                    <div class="card border-0 rounded-5 sales-box mt-5" style="width: 18rem; margin-top: -10px;">
                         <img src="/2/img/mask.png" class="card-img-top" alt="">
                         <div class="card-body  d-flex flex-column position-static d-flex align-items-center ">
                             <h6 class="mb-0 cs-h6 mt-2 text-black">MASKS</h6>
@@ -196,7 +184,7 @@
                                 <p class="text-muted ms-5">Available : </p>
                                 <p>500</p>
                             </div>
-                            <div class="progress w-100 ">
+                            <div class="progress w-100 mb-5">
                                 <div class="progress-bar w-75" role="progressbar" aria-valuenow="351" aria-valuemin="0"
                                     aria-valuemax="500" style="width:10%; background-color:#FF6B00 !important;"></div>
                             </div>
@@ -205,121 +193,132 @@
                 </div>
 
                 <div class="col-md-8 mt-5">
-                    <div id="carouselExampleControls2" class="carousel slide" data-ride="carousel">
+                    <div id="multi-item-example" class="carousel slide carousel-multi-item mt-5" data-ride="carousel">
 
-                        <div class="row mb-2">
+                        <div class="row mb-2 mt-5">
                             <div class="col-md-10 col-sm-3">
                                 <img src="/2/img/featured.svg" class="img-fluid mt-3" alt="">
                             </div>
-                            <div class="col-md-1 col-sm-1">
-                                <a href="#carouselExampleControls2" role="button" data-slide="prev">
+                            <div class="col-md-2 col-sm-1 d-flex">
+                                <a href="#multi-item-example" class="m-0" role="button" data-slide="prev">
                                     <img src="/2/img/<1.svg" alt="">
                                 </a>
-                            </div>
-                            <div class="col-md-1 col-sm-1">
-                                <a href="#carouselExampleControls2" role="button" data-slide="next">
+                                <a href="##multi-item-example" style="margin-left: -35px !important;" role="button"
+                                    data-slide="next">
                                     <img src="/2/img/>1.svg" alt="">
                                 </a>
                             </div>
                         </div>
-                        <div class="carousel-inner carousel-2">
-                            <div class="carousel-item">
-                                <div class="row mb-2 ms-1">
-                                    <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
-                                                <div>
-                                                    <img src="/2/img/cs-1.png" class="img-fluid" alt="">
 
-                                                </div>
-                                                <i class="far fa-heart"></i>
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="carousel-inner carousel-2" role="listbox">
+                            <div class="carousel-item active m-3">
+                                <div class="row">
                                     <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
-                                                <img src="/2/img/cs-2.png" class="img-fluid" alt="">
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
-                                                <img src="/2/img/cs-3.png" class="img-fluid" alt="">
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item active">
-                                <div class="row mb-2 ms-1">
-                                    <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div class="d-flex">
                                                 <img src="/2/img/cs-1.png" class="img-fluid" alt="">
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
                                             </div>
+                                            <div class="d-flex">
+                                            <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                            </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
+
+                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div>
                                                 <img src="/2/img/cs-2.png" class="img-fluid" alt="">
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
                                             </div>
+                                            <div class="d-flex">
+                                                <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                                </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
-                                        <div
-                                            class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                                            <div
-                                                class="col p-4 d-flex flex-column position-static d-flex align-items-center">
+
+                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div>
                                                 <img src="/2/img/cs-3.png" class="img-fluid" alt="">
-                                                <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
-                                                <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
-                                                <button class="btnAddToCart m-0">
-                                                    ADD TO CART
-                                                </button>
                                             </div>
+                                            <div class="d-flex">
+                                                <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                                </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
+                            <div class="carousel-item m-3">
+
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div>
+                                                <img src="/2/img/cs-2.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                                </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div>
+                                                <img src="/2/img/cs-3.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                                </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 clearfix d-none d-md-block">
+                                        <div class="card mb-2 align-items-center bg-transparent border-0">
+                                            <div>
+                                                <img src="/2/img/cs-1.png" class="img-fluid" alt="">
+                                            </div>
+                                            <div class="d-flex">
+                                                <img src="/2/img/likeColor.svg" alt="" style="margin-top: -50px; padding-left: 180px;">
+                                                </div>
+                                            <h6 class="mb-0 cs-h6 mt-2">Casual Shirt</h6>
+                                            <p class="cs-p d-flex">$1999 - <s> $2999</s></p>
+                                            <button class="btnAddToCart m-0">
+                                                ADD TO CART
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -327,42 +326,49 @@
 
     </div>
     <div class="p-3">
-        <div class="container">
-            <div class="row mb-2 ">
-                <div class="col-md-6 mt-5 d-flex justify-content-end">
+        <div class="container-fluid">
+            <div class="row d-flex justify-content-end mt-5">
+                <div class="col-md-4 justify-content-center align-content-center align-content-center text-center mt-5">
                     <img src="/2/img/Shop.svg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-3 mt-5 d-flex justify-content-end">
-                    Showing 1-12 of 36 results
-                </div>
-                <div class="col-md-3 mt-5 d-flex justify-content-end">
-                    <li class="nav-item dropdown d-flex">
-                        <a class="nav-link dropdown-toggle ms-3" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">Default Sorting</a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item bg-transparent " href="#">Price - High to Low</a></li>
-                            <li><a class="dropdown-item bg-transparent" href="#">Price - Low to High</a></li>
-                            <li>
-                                <hr class="dropdown-divider ">
+                <div
+                    class="col-md-4 d-flex justify-content-center align-content-center align-content-center text-center mt-5">
+                    <div class="row mb-2 d-flex">
+                        <div
+                            class="col-md-8 d-flex justify-content-center align-content-center align-content-center text-center">
+                            Showing 1-12 of 36 results
+                        </div>
+                        <div
+                            class="col-md-4 d-flex justify-content-center align-content-center align-content-center text-center">
+                            <li class="nav-item dropdown d-flex">
+                                <a class="nav-link dropdown-toggle ms-3" href="#" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">Default Sorting</a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item bg-transparent " href="#">Price - High to Low</a></li>
+                                    <li><a class="dropdown-item bg-transparent" href="#">Price - Low to High</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider ">
+                                    </li>
+                                    <li><a class="dropdown-item bg-transparent" href="#">Categories</a></li>
+                                </ul>
                             </li>
-                            <li><a class="dropdown-item bg-transparent" href="#">Categories</a></li>
-                        </ul>
-                    </li>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="row row-cols-1 row-cols-md-4 g-4">
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75 "
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -372,22 +378,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -397,23 +404,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -423,23 +430,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -449,23 +456,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -475,23 +482,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -501,23 +508,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -527,23 +534,23 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
                 <div class="col mt-5">
-                    <div class="card h-100 d-flex align-items-baseline c-box mt-5 rounded-5 h-75"
-                        style=" height: 90% !important;">
+                    <div class="card h-100 c-box mt-5 rounded-5 h-75 d-flex align-content-center align-items-center"
+                        style=" height: 90% !important; width: 90% !important;">
                         <img src="/2/img/cs-4.png" class="img-fluid "
                             style=" position: relative; margin-top: -40px; border-radius: 30px;">
-                        <div class="d-flex">
-                            <h6 class="mb-0 cs-h6 mt-2 text-dark ms-2 me-5">Casual Shirt</h6>
-                            <img class="img-fluid ms-5" src="/2/img/like.svg" alt="">
+                        <div
+                            class="d-flex m-0 align-self-baseline ms-4 w-75 align-content-between justify-content-between">
+                            <h6 class="mb-0 cs-h6 mt-2 text-dark">Casual Shirt</h6>
+                            <img class="img-fluid mt-2" src="/2/img/like.svg" alt="">
                         </div>
-                        <p class="cs-p d-flex text-dark ms-2">$1999 - <s> $2999</s></p>
-                        <div class="shirt-colors ms-1">
+                        <div class="shirt-colors m-2  d-flex align-self-baseline ms-4">
                             <span class="black active" data-color="#7ed6df"
                                 data-pic="url(https://i.imgur.com/oRpXTOq.png)"></span>
                             <span class="blue" data-color="#badc58"
@@ -553,36 +560,39 @@
                             <span class="ogreen" data-color="#ff7979"
                                 data-pic="url(https://i.imgur.com/iVJjW92.png)"></span>
                         </div>
-                        <button class="btnAddToCart ms-5 bg-black">
+                        <p class="cs-p d-flex text-dark align-self-baseline ms-4">$1999 - <s> $2999</s></p>
+                        <button class="btnAddToCart m-0 bg-black">
                             ADD TO CART
                         </button>
-
                     </div>
                 </div>
             </div>
+
+
+
         </div>
-
-
-
     </div>
     <div class="p-4">
 
-        <div class="container">
-            <div class="row mb-2 m-5">
-                <div class="row mb-2 m-5">
-                    <div class="col-md-6 mt-5">
-                        <div class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative">
-                            <div class="col p-4 d-flex flex-column position-static">
-                                <h2 class="mb-0 p4-h2">About DK Shop</h2>
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="row mb-2 ">
+                    <div class="col-md-6 mt-5 d-flex justify-content-center align-items-center">
+                        <div class="row g-0  overflow-hidden flex-md-row mb-4 h-md-250 position-relative ">
+                            <div class="col p-4 flex-column position-static ">
+                                <h2 class="mb-0 p4-h2 ">About DK Shop</h2>
+                                </br>
                                 <p class="p4-p">jkfsldkfjg jf a;i opiajs ;m ;ksdlkf m;lkjsd k;l, ;ojd k; hdgfk
-                                    iuhsljdfhsdjfhlks;flk ma;sdu f[oapsdf;la sdpfoja sdlmf jpo sdijfhlasdkjf sdof7 nssdl
+                                    iuhsljdfhsdjfhlks;flk ma;sdu f[oapsdf;la sdpfoja sdlmf jpo sdijfhlasdkjf sdof7
+                                    nssdl
                                     8sdfas dlkju ssl 000 00 ckas e7r23jrnlk jdshfiuhasdifha enfasdnfjsd jp iidis ii
                                     osiodfp oipa iu8ewjfberofydv aemn 87usdf mglkeru0 sdf lkjsdflgj dv ,xmcnvpidy
                                     98e4tm3w poaedn pvidjfo34jfdf d lkjfghlsd
                                 </p>
                                 </br>
                                 <p class="p4-p">
-                                    jhgpuud f0 lsdjhfo bejf pa9eu dnsaldk asdjp98 sdlmf jpo sdijfhlasdkjf sdof7 nssdl
+                                    jhgpuud f0 lsdjhfo bejf pa9eu dnsaldk asdjp98 sdlmf jpo sdijfhlasdkjf sdof7
+                                    nssdl
                                     8sdfas dlkju ssl 000 00 ckas e7r23jrnlk jdshfiuhasdifha enfasdnfjsd jp iidis ii
                                     osiodfp oipa iu8ewjfberofydv aemn 87usdf mglkeru0 sdf lkjsdflgj dv ,xm
                                 </p>
@@ -590,7 +600,8 @@
                                 <p class="p4-p">
                                     cnvpidy 98e4tm3w poaedn pvidjfo34jfdf d lkjfghlsdjhgpuud f0 lsdjhfo bejf pa9eu
                                     dnsaldk asdjp98 sdlmf jpo sdijfhlasdkjf sdof7 nssdl 8sdfas dlkju ssl 000 00 ckas
-                                    e7r23jrnlk jdshfiuhasdifha enfasdnfjsd jp iidis ii osiodfp oipa iu8ewjfberofydv aemn
+                                    e7r23jrnlk jdshfiuhasdifha enfasdnfjsd jp iidis ii osiodfp oipa iu8ewjfberofydv
+                                    aemn
                                     87usdf mglkeru0 sdf lkjsdflgj dv ,xmcn##
                                 </p>
                             </div>
@@ -611,7 +622,7 @@
 
             <div class="container">
                 <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top border-dark">
-                    <div class="col-md-4 mb-5">
+                    <div class="col-md-4">
                         <a href="/" class="d-flex align-items-center mb-3 link-dark text-decoration-none">
                             <a class="navbar-brand me-5" href="#">
                                 <img src="/2/img/logo.svg" class="img-fluid" alt="">
@@ -623,7 +634,8 @@
                         <h5>COMPANY</h5>
                         <ul class="nav flex-column">
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Delivery</a></li>
-                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collection</a></li>
+                            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Collection</a>
+                            </li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Returns</a></li>
                             <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Account</a></li>
                         </ul>
@@ -641,13 +653,13 @@
 
 
                     <div class="col-md-3 offset-md-1 mb-3 mt-3">
-                        <form class=" form-control bg-transparent border-0 rounded-0" role="search">
+                        <form class=" form-control bg-transparent border-0 rounded-0 p-0" role="search">
                             <h5>Get 15 % off on your first order
                                 By subscribing</h5>
-                            <div class="d-flex bg-white search-form border-bottom rounded-0 mt-3">
-                                <input class="border-bottom" type="email" placeholder="Email" aria-label="Email">
-                                <img src="/2/img/enter.svg" class="d-flex ms-2 img-fluid" alt="">
-                            </div>
+                                <div class="d-flex bg-white search-form rounded-0 mt-3">
+                                    <input class="border-bottom" type="email" placeholder="Email" aria-label="Email">
+                                    <img src="/2/img/enter.svg" class="d-flex ms-2 img-fluid" alt="">
+                                </div>
                         </form>
                     </div>
 
@@ -671,8 +683,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-
-
 </body>
 
 </html>
